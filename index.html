@@ -5,9 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="./dist/main.js"></script>
+  <style>
+    #displayArea {
+      background-color: aqua;
+      width: 200px;
+    }
+  </style>
 </head>
 <body>
-  hello
-  <input type="button" value="送信" onclick="HtmlFunc.addNum()"/>
+  数字を入れてね
+  <input type="text" id="height"/>
+  <input type="text" id="width"/>
+  <div id=displayArea>
+    ああああ
+  </div>
+  <div>
+    <label for="cars">Choose a car:</label>
+    <select name="colors" id="colors">
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="black">Black</option>
+      <option value="yellow">Yellow</option>
+    </select>
+  </div>
+  <script>
+    HtmlFunc.SetColorHandler("colors")
+    HtmlFunc.SetSizeHandler("height")
+    HtmlFunc.SetSizeHandler("width")
+  </script>
 </body>
 </html>
