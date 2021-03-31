@@ -6,7 +6,7 @@ const SetSizeHandler = (sourceId) => {
 const SetPositionHandler = (sourceId) => {
   const source = document.getElementById(sourceId);
   let val = 0;
-  source.addEventListener('click', PositionHandler, val);
+  source.addEventListener('change', PositionHandler, val);
 }
 
 

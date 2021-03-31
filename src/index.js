@@ -1,9 +1,5 @@
-import {addNum} from './add2'
 import {SetColorHandler} from './ColorHandler'
 import {SetSizeHandler, SetPositionHandler} from './SizeHandler'
-const addNum1 = ( numOne = 2, numbTwo = 3 ) => {
- return numOne + numbTwo;
-};
 
 const run = () => {
   SetColorHandler("colors")
@@ -18,4 +14,5 @@ const run = () => {
 module.exports = {
   run
 }
-// window.callMe = addNum
+// if you want register global
+// window.callMe = run
