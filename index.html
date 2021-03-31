@@ -10,6 +10,9 @@
       background-color: aqua;
       width: 200px;
     }
+    #displayContent {
+      position: relative;
+    }
   </style>
 </head>
 <body>
@@ -17,21 +20,24 @@
   <input type="number" id="height"/>
   <input type="number" id="width"/>
   <div id=displayArea>
-    ああああ
+    <div id=displayContent>ああああ</div>
   </div>
   <div>
-    <label for="cars">Choose a car:</label>
+    <label for="cars">Choose a color:</label>
     <select name="colors" id="colors">
       <option value="red">Red</option>
       <option value="blue">Blue</option>
       <option value="black">Black</option>
       <option value="yellow">Yellow</option>
     </select>
+    <label for="cars">Choose a position:</label>
+    <input type="button" value="0" id=top>
+    <input type="button" value="0" id="right">
+    <input type="button" value="0" id="bottom">
+    <input type="button" value="0" id="left">
   </div>
   <script>
-    HtmlFunc.SetColorHandler("colors")
-    HtmlFunc.SetSizeHandler("height")
-    HtmlFunc.SetSizeHandler("width")
+    HtmlFunc.run()
   </script>
 </body>
 </html>
