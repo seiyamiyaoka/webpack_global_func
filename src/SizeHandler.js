@@ -1,6 +1,6 @@
 const SetSizeHandler = (sourceId) => {
   const source = document.getElementById(sourceId);
-  source.addEventListener('input', SizeHandler);
+  source.addEventListener('change', SizeHandler);
 }
 
 
